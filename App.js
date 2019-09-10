@@ -6,7 +6,7 @@ import { createStackNavigator } from "react-navigation-stack";
 import { Provider } from "react-redux";
 import store from "./src/store";
 
-import { Login, Menu, Profile } from "./src/screens";
+import { Login, Menu, Profile, OpenChannel } from "./src/screens";
 
 const AppNavigator = createStackNavigator({
   Login: {
@@ -17,7 +17,8 @@ const AppNavigator = createStackNavigator({
   },
   Profile: {
     screen: Profile
-  }
+  },
+  OpenChannel: { screen: OpenChannel }
 });
 
 const AppContainer = createAppContainer(AppNavigator);

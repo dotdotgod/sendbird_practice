@@ -38,6 +38,7 @@ class Menu extends Component {
 
   _onOpenChannelPress = () => {
     // TODO: OpenChannel screen
+    this.props.navigation.push("OpenChannel");
   };
 
   _onGroupChannelPress = () => {
